@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 
 
 import { ChartsModule } from 'ng2-charts';
@@ -11,6 +11,8 @@ import { DonaComponent } from './dona/dona.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { MapComponent } from './map/map.component';
 import { ContactoComponent } from './contacto/contacto.component';
+import {RedSocialComponent} from './red-social/red-social.component';
+import {ConfiguracionTwitterComponent} from './configuracion-twitter/configuracion-twitter.component'
 
 
 
@@ -22,6 +24,8 @@ import { ContactoComponent } from './contacto/contacto.component';
     CarouselComponent,
     MapComponent,
     ContactoComponent,
+    RedSocialComponent,
+    ConfiguracionTwitterComponent,
   ],
   exports: [
     IncrementadorComponent,
@@ -29,12 +33,15 @@ import { ContactoComponent } from './contacto/contacto.component';
     CarouselComponent,
     MapComponent,
     ContactoComponent,
+    RedSocialComponent,
+    ConfiguracionTwitterComponent,
 
   ],
   imports: [
     CommonModule,
     FormsModule,
     ChartsModule,
+    ReactiveFormsModule,
     AgmCoreModule.forRoot({apiKey: "AIzaSyDUPotZFtIcWjO3DQC6sYPDJ5rRAJ7ToXs"}),
 
   ]

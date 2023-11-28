@@ -1,0 +1,5 @@
+<form [formGroup]="configForm">
+  <label for="username">Nombre de usuario de Twitter:</label>
+  <input type="text" id="username" formControlName="username" />
+  <button (click)="guardarConfiguracion()">Guardar</button>
+</form>

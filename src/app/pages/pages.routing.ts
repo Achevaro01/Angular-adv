@@ -15,8 +15,8 @@ const routes: Routes = [
         component: PagesComponent,
         children: [
             { path: '', component: DashboardComponent, data: { titulo: 'Achecars' } },
-            { path: 'progress', component: ProgressComponent, data: { titulo: 'Redes Sociales' }},
-            { path: 'redes-sociales', component: Grafica1Component, data: { titulo: 'Gráfica #1' }},
+            { path: 'progress', component: ProgressComponent, data: { titulo: 'Progress' }},
+            { path: 'redes-sociales', component: Grafica1Component, data: { titulo: 'Redes Sociales' }},
             { path: 'account-settings', component: AccountSettingsComponent, data: { titulo: 'Ajustes de cuenta' }},
             { path: 'promesas', component: PromesasComponent, data: { titulo: 'Promesas' }},
             { path: 'rxjs', component: RxjsComponent, data: { titulo: 'RxJs' }},
